@@ -51,12 +51,17 @@ void setup() {
 void loop() {
   int humidityOfJolokia = analogRead(A0); //Analog pin number 0 
   int humidityOfHabanero = analogRead(A2);// Analog pin number 2
+  
   lcd.print("Jolokia:  ");
   lcd.print(humidityOfJolokia);
+  
   lcd.setCursor(0,1);
+  
   lcd.print("Habanero: ");
   lcd.print(humidityOfHabanero);
+  
   delay(300);
+  
   lcd.clear();
 }
 
