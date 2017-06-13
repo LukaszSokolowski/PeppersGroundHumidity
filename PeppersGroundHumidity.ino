@@ -47,11 +47,11 @@ void setup() {
   Serial.begin(9600); 
   lcd.setCursor(0,0);
 }
-
 void loop() {
-  
+  // Sets a values to display
   int humidityOfJolokia = analogRead(A0); //Analog pin number 0 
   int humidityOfHabanero = analogRead(A2);// Analog pin number 2
+  // Displays the values on the lcd screen
   lcd.print("Jolokia:  ");
   lcd.print(humidityOfJolokia);
   lcd.setCursor(0,1);
